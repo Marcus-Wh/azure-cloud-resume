@@ -5,94 +5,235 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marcus White | Cloud Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-<header>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Marcus White</h1>
+<div class="hero-divider"></div>
+        <p class="subtitle">
+          Cloud &amp; Network Engineering Student | Future Cloud Engineer
+        </p>
+        <div class="hero-badges">
+  <span>Azure</span>
+  <span>Networking</span>
+  <span>Linux</span>
+  <span>Security</span>
+  <span>Automation</span>
+</div>
 
-<h1>Marcus White</h1>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="assets/Marcus-White-CV.pdf" download>
+            Download CV
+          </a>
+          <a class="btn btn-secondary" href="#certifications">
+            View Certifications
+          </a>
+          <a class="btn btn-github" href="https://github.com/Marcus-Wh" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </header>
 
-<p class="subtitle">
-Cloud & Network Engineering Student | Future Cloud Engineer
-</p>
+    <main class="container">
+      <section>
+        <h2>About Me</h2>
+        <p>
+          I am a Cloud &amp; Network Engineering student at WGU with hands-on
+          experience in Azure, networking, Linux, security, and automation.
+          I am building cloud projects to transition into Cloud and DevOps roles.
+          I am currently working as a heavy-duty diesel mechanic and am passionate
+          about technology and learning new skills. I am excited to leverage my
+          technical knowledge and problem-solving abilities to contribute to
+          innovative cloud solutions in the future.
+        </p>
+      </section>
 
-<p>
-Azure • Networking • Linux • Security • Automation
-</p>
+      <section>
+        <h2>Technical Skills</h2>
+        <ul class="card-list">
+          <li>Cloud Platforms: Microsoft Azure</li>
+          <li>Networking: TCP/IP, DNS, VPN, Routing</li>
+          <li>Operating Systems: Linux, Windows Server</li>
+          <li>Automation: Python, Bash, PowerShell</li>
+          <li>Infrastructure: Virtual Machines, Virtual Networks</li>
+          <li>Security: IAM, Network Security Groups, Zero Trust concepts</li>
+        </ul>
+      </section>
 
-</header>
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <p class="section-intro">
+          Click any certification below to open the PDF.
+        </p>
 
-<p>
-Azure • Networking • Linux • Security • Automation
-</p>
+        <a class="cert-card" href="certs/comptia-a-plus.pdf" target="_blank">
+  <div class="cert-icon">🖥️</div>
+  <h3>CompTIA A+</h3>
+  <p>View certificate PDF</p>
+</a>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am a Cloud & Network Engineering student at WGU with hands-on experience
-        in Azure, networking, Linux, security, and automation. I am building cloud
-        projects to transition into Cloud and DevOps roles. I am currently working
-        as a heavy duty diesel mechanic and am passionate about technology and 
-        learning new skills. I am excited to leverage my technical knowledge and 
-        problem-solving abilities to contribute to innovative cloud solutions in the future.
-      </p>
-    </section>
+          <a class="cert-card" href="certs/comptia-network-plus.pdf" target="_blank">
+  <div class="cert-icon">🌐</div>
+  <h3>CompTIA Network+</h3>
+  <p>View certificate PDF</p>
+</a>
 
-    <section>
-<h2>Technical Skills</h2>
+          <a class="cert-card" href="certs/comptia-security-plus.pdf" target="_blank">
+  <div class="cert-icon">🔐</div>
+  <h3>CompTIA Security+</h3>
+  <p>View certificate PDF</p>
+</a>
 
-<ul>
-<li>Cloud Platforms: Microsoft Azure</li>
-<li>Networking: TCP/IP, DNS, VPN, Routing</li>
-<li>Operating Systems: Linux, Windows Server</li>
-<li>Automation: Python, Bash, PowerShell</li>
-<li>Infrastructure: Virtual Machines, Virtual Networks</li>
-<li>Security: IAM, Network Security Groups, Zero Trust concepts</li>
-</ul>
+        <a class="cert-card" href="certs/itil4.pdf" target="_blank">
+  <div class="cert-icon">⚙️</div>
+  <h3>ITIL 4</h3>
+  <p>View certificate PDF</p>
+</a>
 
+          <a class="cert-card" href="certs/azure-fundamentals.pdf" target="_blank">
+  <div class="cert-icon">☁️</div>
+  <h3>Azure Fundamentals</h3>
+  <p>View certificate PDF</p>
+</a>
+
+          <a class="cert-card" href="certs/lpi-linux-essentials.pdf" target="_blank">
+  <div class="cert-icon">🐧</div>
+  <h3>LPI Linux Essentials</h3>
+  <p>View certificate PDF</p>
+</a>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul class="project-list">
+          <li>
+            <strong>Azure Cloud Resume Project</strong><br />
+            Deployed a static portfolio website using Azure Storage static hosting.
+            Built a serverless API using Azure Functions to return a visitor counter.
+          </li>
+          <li>
+            <strong>More Cloud Projects Coming Soon</strong><br />
+            Currently building additional projects focused on networking,
+            automation, and cloud infrastructure.
+          </li>
+        </ul>
+      </section>
+      <section class="architecture-section">
+  <h2>Cloud Architecture</h2>
+  <p class="section-intro">
+    This portfolio is deployed on Azure using static website hosting and serverless components.
+  </p>
+
+  <div class="architecture-diagram">
+    <div class="arch-card">
+      <span class="arch-icon">💻</span>
+      <h3>User Browser</h3>
+      <p>Visitors access the portfolio through a public web endpoint.</p>
+    </div>
+
+    <div class="arch-arrow">↓</div>
+
+    <div class="arch-card">
+      <span class="arch-icon">☁️</span>
+      <h3>Azure Static Website</h3>
+      <p>HTML, CSS, JavaScript, PDFs, and assets are hosted in Azure Storage.</p>
+    </div>
+
+    <div class="arch-arrow">↓</div>
+
+    <div class="arch-card">
+      <span class="arch-icon">⚡</span>
+      <h3>Azure Function API</h3>
+      <p>A serverless function handles the visitor counter logic.</p>
+    </div>
+
+    <div class="arch-arrow">↓</div>
+
+    <div class="arch-card">
+      <span class="arch-icon">📦</span>
+      <h3>Cloud Data Layer</h3>
+      <p>Visitor count data can be stored and returned from a cloud-backed service.</p>
+    </div>
+  </div>
 </section>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>CompTIA A+</li>
-        <li>CompTIA Network+</li>
-        <li>CompTIA Security+</li>
-        <li>ITIL 4</li>
-        <li>Azure Fundamentals</li>
-        <li>LPI Linux</li>
-      </ul>
-    </section>
+<section class="pipeline-section">
+  <h2>Deployment Pipeline</h2>
+  <p class="section-intro">
+    This website uses GitHub and Azure to automatically deploy updates to production.
+  </p>
 
-    <section>
-<h2>Projects</h2>
+  <div class="pipeline-diagram">
+    <div class="pipeline-card">
+      <span class="pipeline-icon">💻</span>
+      <h3>Local Development</h3>
+      <p>I update the portfolio code in HTML, CSS, and JavaScript.</p>
+    </div>
 
-<ul>
-<li>
-<strong>Azure Cloud Resume Project</strong><br>
-Deployed a static portfolio website using Azure Storage static hosting. Built a serverless API using Azure Functions to return a visitor counter.
-</li>
+    <div class="pipeline-arrow">→</div>
 
-<li>
-<strong>More cloud projects coming soon</strong><br>
-Currently building additional projects focused on networking, automation, and cloud infrastructure.
-</li>
+    <div class="pipeline-card">
+      <span class="pipeline-icon">🐙</span>
+      <h3>GitHub Repository</h3>
+      <p>Code is stored in GitHub for version control and change tracking.</p>
+    </div>
 
-</ul>
+    <div class="pipeline-arrow">→</div>
 
+    <div class="pipeline-card">
+      <span class="pipeline-icon">⚙️</span>
+      <h3>GitHub Actions</h3>
+      <p>A workflow runs automatically on push and deploys the site.</p>
+    </div>
+
+    <div class="pipeline-arrow">→</div>
+
+    <div class="pipeline-card">
+      <span class="pipeline-icon">☁️</span>
+      <h3>Azure Static Website</h3>
+      <p>The latest files are uploaded to Azure Storage and served live.</p>
+    </div>
+  </div>
 </section>
 
-    <section>
-      <h2>Visitor Counter</h2>
-      <p>Visitors: <span id="counter">Loading...</span></p>
-    </section>
+      <section class="resume-section">
+        <h2>Resume</h2>
+        <p>
+          Want the full PDF version of my resume? Download it here:
+        </p>
+        <a class="btn btn-primary" href="assets/Marcus-White-CV.pdf" download>
+          Download My CV
+        </a>
+      </section>
+
+      <section>
+        <h2>Visitor Counter</h2>
+        <p>Visitors: <span id="counter">Loading...</span></p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:marcus4white@gmail.com">marcus4white@gmail.com</a></p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/marcus-white-8b2030335" target="_blank">
+            Marcus White on LinkedIn
+          </a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/Marcus-Wh" target="_blank">
+            github.com/Marcus-Wh
+          </a>
+        </p>
+      </section>
+    </main>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-<section>
-<h2>Contact</h2>
-
-<p>Email: marcus4white@gmail.com</p>
-<p>LinkedIn: www.linkedin.com/in/marcus-white-8b2030335</p>
-<p>GitHub: https://github.com/Marcus-Wh</p>
-
-</section>
