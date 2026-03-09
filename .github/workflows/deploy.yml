@@ -5,7 +5,7 @@ on:
     branches:
       - main
   workflow_dispatch:
-  
+
 permissions:
   contents: read
 
@@ -24,11 +24,13 @@ jobs:
 
       - name: Upload site to $web
         run: |
+          pwd
+          ls -la
           az storage blob upload-batch \
             --account-name marcuscloudresume \
             --auth-mode login \
             --destination '$web' \
-            --source site
+            --source "${{ github.workspace }}"
 
       - name: Logout
         run: az logout || true
