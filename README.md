@@ -10,12 +10,17 @@ Hosted using Azure Storage Static Website.
 
 ```mermaid
 flowchart TD
-    A[User Browser] --> B[Azure Static Website]
-    B --> C[JavaScript API Call]
-    C --> D[Azure Function API]
-    D --> E[Visitor Count Response]
-    E --> B
+    A --> B
+    B --> C
+    C --> D
+    D --> E
 
+    A[User Browser]
+    B[Azure Static Website]
+    C[JavaScript API Call]
+    D[Azure Function API]
+    E[Visitor Count Response]
+```
 ## Technologies Used
 
 - Microsoft Azure
@@ -60,4 +65,5 @@ cloud-resume
 Marcus White  
 
 Cloud & Network Engineering Student  
+
 
