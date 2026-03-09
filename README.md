@@ -32,6 +32,16 @@ Azure Function (Serverless API)
 - Visitor counter displayed on the homepage
 - CORS configuration for secure API access
 
+
+## Architecture
+
+```mermaid
+flowchart TD
+    A[User Browser] --> B[Azure Storage Static Website]
+    B --> C[JavaScript fetch()]
+    C --> D[Azure Function API]
+    D --> E[Visitor Count Response]
+    E --> B
 ## Project Structure
 cloud-resume
 │
@@ -58,4 +68,5 @@ cloud-resume
 ## Author
 
 Marcus White  
+
 Cloud & Network Engineering Student  
