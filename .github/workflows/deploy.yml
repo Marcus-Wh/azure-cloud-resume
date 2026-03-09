@@ -24,13 +24,12 @@ jobs:
 
       - name: Upload site to $web
         run: |
-          pwd
-          ls -la
           az storage blob upload-batch \
             --account-name marcuscloudresume \
             --auth-mode login \
             --destination '$web' \
-            --source "${{ github.workspace }}"
+            --source "${{ github.workspace }}" \
+            --overwrite true
 
       - name: Logout
         run: az logout || true
