@@ -8,13 +8,13 @@ Hosted using Azure Storage Static Website.
 
 ## Architecture
 
-Browser
-↓
-Azure Storage Static Website
-↓
-JavaScript API Request
-↓
-Azure Function (Serverless API)
+```mermaid
+flowchart TD
+    A[User Browser] --> B[Azure Static Website]
+    B --> C[JavaScript API Call]
+    C --> D[Azure Function API]
+    D --> E[Visitor Count Response]
+    E --> B
 
 ## Technologies Used
 
@@ -32,16 +32,6 @@ Azure Function (Serverless API)
 - Visitor counter displayed on the homepage
 - CORS configuration for secure API access
 
-
-## Architecture
-
-```mermaid
-flowchart TD
-    A[User Browser] --> B[Azure Storage Static Website]
-    B --> C[JavaScript fetch()]
-    C --> D[Azure Function API]
-    D --> E[Visitor Count Response]
-    E --> B
 ## Project Structure
 cloud-resume
 │
@@ -70,3 +60,4 @@ cloud-resume
 Marcus White  
 
 Cloud & Network Engineering Student  
+
