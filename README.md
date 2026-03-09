@@ -1,69 +1,161 @@
-# Azure Cloud Resume Project
+# Azure Cloud Resume Portfolio
 
-This project is a personal cloud portfolio website deployed using Microsoft Azure.  
-It demonstrates serverless architecture and cloud hosting concepts.
+![Azure](https://img.shields.io/badge/Azure-Cloud-blue)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-green)
+![Status](https://img.shields.io/badge/Deployment-Live-success)
 
-## Live Website
-Hosted using Azure Storage Static Website.
+A personal cloud portfolio website deployed on **Microsoft Azure** with automated deployment using **GitHub Actions**.
 
-## Architecture
+This project showcases my certifications, cloud projects, and technical skills as I transition into a **Cloud Engineering career**.
 
-```mermaid
-flowchart TD
-    A --> B
-    B --> C
-    C --> D
-    D --> E
+🌐 **Live Website**  
+https://marcuscloudresume.z5.web.core.windows.net
 
-    A[User Browser]
-    B[Azure Static Website]
-    C[JavaScript API Call]
-    D[Azure Function API]
-    E[Visitor Count Response]
-```
-## Technologies Used
+---
+
+# Project Overview
+
+This portfolio demonstrates how a static website can be deployed and maintained using modern **cloud and DevOps practices**.
+
+The website includes:
+
+- Downloadable resume
+- Certification directory
+- Cloud architecture explanation
+- Automated deployment pipeline
+- Azure-hosted static website
+
+---
+
+# Architecture
+
+This project uses a simple Azure cloud architecture.
+User Browser
+↓
+Azure Storage Static Website
+↓
+GitHub Actions CI/CD
+↓
+Azure Storage ($web container)
+
+
+Future architecture expansion:
+User Browser
+↓
+Azure Static Website
+↓
+Azure Function API
+↓
+Azure Table Storage / CosmosDB
+
+
+---
+
+# Technologies Used
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Cloud Platform
 
 - Microsoft Azure
 - Azure Storage Static Website
-- Azure Functions
-- HTML
-- CSS
-- JavaScript
 
-## Features
+### DevOps
 
-- Static cloud-hosted portfolio website
-- Serverless API using Azure Functions
-- Visitor counter displayed on the homepage
-- CORS configuration for secure API access
+- GitHub
+- GitHub Actions CI/CD
 
-## Project Structure
-cloud-resume
-│
+---
+
+# CI/CD Deployment Pipeline
+
+The website is automatically deployed using **GitHub Actions**.
+
+Whenever changes are pushed to the `main` branch:
+
+1. GitHub Actions workflow runs
+2. The workflow logs into Azure
+3. The site files are uploaded to the Azure Storage `$web` container
+4. The updated site becomes live
+
+Deployment workflow:
+Local Development
+↓
+Git Commit + Push
+↓
+GitHub Actions
+↓
+Azure Login
+↓
+Upload to Azure Storage ($web)
+↓
+Live Website Update
+
+---
+
+# Project Structure
+.
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+│
+├── assets
+│ └── Marcus-White-CV.pdf
+│
+├── certs
+│ ├── comptia-a-plus.pdf
+│ ├── comptia-network-plus.pdf
+│ ├── comptia-security-plus.pdf
+│ └── linux-essentials.pdf
+│
+└── .github
+└── workflows
+└── deploy.yml
 
+---
 
-## How It Works
+# Features
 
-1. The static website is hosted using Azure Storage Static Website hosting.
-2. The site loads HTML, CSS, and JavaScript files from the Azure storage container.
-3. JavaScript sends a request to an Azure Function API endpoint.
-4. The API returns a visitor count which is displayed on the webpage.
+- Azure-hosted static website
+- Certification viewer
+- Resume download
+- GitHub CI/CD deployment
+- Cloud architecture documentation
+- Responsive design
 
-## Future Improvements
+---
 
-- Persistent visitor counter using Azure Table Storage
-- CI/CD deployment using GitHub Actions
-- Custom domain for the portfolio
-- Additional cloud infrastructure projects
+# Future Improvements
 
-## Author
+Planned upgrades for the portfolio:
 
-Marcus White  
+- Azure Functions visitor counter
+- Azure Table Storage analytics
+- Custom domain
+- Infrastructure diagram
+- Project showcase cards
+- Terraform infrastructure deployment
 
+---
+
+# Author
+
+**Marcus White**  
 Cloud & Network Engineering Student  
+Western Governors University
 
+GitHub  
+https://github.com/Marcus-Wh
 
+LinkedIn  
+https://www.linkedin.com/in/marcus-white-8b2030335
+
+---
+
+# License
+
+This project is open source and available for educational purposes.
