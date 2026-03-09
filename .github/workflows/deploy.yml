@@ -28,7 +28,7 @@ jobs:
             --account-name marcuscloudresume \
             --auth-mode login \
             --destination '$web' \
-            --source .
+            --source site
 
       - name: Logout
         run: az logout || true
